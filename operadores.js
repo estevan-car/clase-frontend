@@ -64,15 +64,18 @@ console.log(5 !== "5") //Estrictamente desigual (Compara valor y tipo de dato)
 
 //operadores lógicos
 
-console.log(true && true) //AND
-console.log(true && false) //AND
-console.log(false && true) //AND
-console.log(false && false) //AND
+console.log(5 > 10 && 15 < 20) //AND
+console.log(5 < 10 && 15 > 20) //AND
+console.log(5 < 10 && 15 < 20) //AND
+console.log(5 > 10 && 15 < 20) //AND
 
-console.log(true || true) //OR
-console.log(true || false) //OR
-console.log(false || true) //OR
-console.log(false || false) //OR
+console.log(5 < 10 || 15 < 20) //OR
+console.log(5 < 10 || 15 > 20) //OR
+console.log(5 > 10 || 15 < 20) //OR
+console.log(5 > 10 || 15 > 20) //OR
 
-console.log(!true) //NOT
-console.log(!false) //NOT
+//operador ternario
+
+const isRaining = false;
+isRaining ? console.log("Lleva paraguas") : 
+console.log("No lleva paraguas");
